@@ -1,0 +1,69 @@
+//FIRST CODE//
+fun
+fun is a word in the Kotlin programming language. fun stands for function. A function is a section of a program that performs a specific task.
+Note: Kotlin has many special words with very specific meanings. As you learn to program in the Kotlin language, you will learn these words. They are often called keywords or reserved words.
+
+
+fun main
+main is the name of this function. Functions have names, so they can be distinguished from each other. This function is called main, because it is the first, or main, function that is called when you run the program. Every Kotlin program needs a function named main.
+
+fun main()
+The function name is always followed by () two parentheses.
+Inside the parentheses, you can put information for the function to use. This input to the function is called "arguments" or args for short. You will learn more about arguments later.
+
+fun main() {}
+Notice the pair of curly braces {} after the parentheses. Inside a function is code that accomplishes a task. These curly braces surround those lines of code.
+Look at the line of code between the curly braces:
+
+
+println("Happy Birthday!")
+This line of code prints the Happy Birthday! text.
+
+println tells the system to print a line of text.
+Inside the parentheses you put the text to be printed.
+Notice that the text to be printed is surrounded by quotes. This tells the system that everything inside the quotation marks should be printed exactly as given.
+To actually print the text, this whole println instruction has to be inside the main function.
+
+The print() instruction just prints the text without adding a line break at the end of each string.
+
+So, there it is. The smallest Kotlin program.
+
+
+fun main() {
+    println("Happy Birthday!")
+}
+
+//ERRORS//
+
+This message, Unresolved reference: Jhansi, tells you what the system thinks is the error in the code.
+Errors are marked red in the program. There is an error message in the output pane to help you figure out where the error is and what might be causing it.
+
+//WORKING WITH VARIABLE//
+
+val is a special word used by Kotlin, called a keyword, indicating that what follows is the name of a variable.
+age is the name of the variable.
+= makes the value of age (on its left) be the same as the value on its right. In math, a single equal sign is used to assert that the values on each side are the same. In Kotlin, unlike in math, a single equal sign is used to assign the value on the right to the named variable on the left.
+
+Important: A variable declared using the val keyword can only be set once. You cannot change its value later in the program.
+
+You can declare a changeable variable with the var keyword, which you will do in a later codelab.
+
+To use a variable inside a print statement, you need to surround it with some symbols that tell the system that what comes next is not text, but a variable. Instead of printing text, the system needs to print the value of the variable. You do this by putting your variable inside curly braces preceded by a dollar sign, like in the example below.
+
+
+${variable}
+//MORE ON FUNCTIONS//
+
+fun main() {
+    val border="'-._,-'"
+    val timesToRepeat=4;
+    printBorder(border,timesToRepeat)
+    println("Happy Birthday, Jhansi!")
+    printBorder(border,timesToRepeat)
+}
+fun printBorder(border: String,timesToRepeat: Int){
+    repeat(timesToRepeat){
+    print(border)
+    }
+    println()
+}
